@@ -11,7 +11,7 @@ The project involves validating data between two sets of tables, each containing
 - PySpark
 - Spark SQL
 - Databricks
-- 
+  
 ## Process Flow
 
 ### Steps:
@@ -34,5 +34,6 @@ The workflow consists of three tasks:
 ## Repository Structure
 
 - **notebooks/**: Contains the notebooks for data validation and the trigger notebook.
-  - `data_validation.ipynb`: Notebook for validating the tables 
-  - `trigger_notebook.ipynb`: Notebook to check and trigger the Prod cluster.
+  - `Delta_Table_Validation.ipynb`: Notebook for validating the tables 
+  - `Cluster_Trigger.ipynb`: Notebook to check and trigger the Prod cluster.
+  - `.py`: python extension of same notebooks.
