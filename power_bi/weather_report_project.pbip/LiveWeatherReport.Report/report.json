@@ -1,0 +1,100 @@
+{
+  "config": "{\"version\":\"5.60\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "dg5AAA90EFEFE747CB9357C4FC19B85A58",
+    "PBI_CV_309E6B47_39A5_4681_808F_132AFB230872"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#CFE8ED'\"}}}}},\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f171b1c943272b180886",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"37c487fe40ac62ae1ad5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":69.70145689037497,\"z\":2000,\"width\":311.8223071411512,\"height\":251.90351086696919,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"Y\":[{\"queryRef\":\"atmospheredet.Valid_humidty\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"atmospheredet\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Valid_humidty\"},\"Name\":\"atmospheredet.Valid_humidty\",\"NativeReferenceName\":\"Valid_humidty\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Valid_humidty\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"target\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"calloutValue\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"showDynamicLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Percentage Of Humidity'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"atmospheredet\"}},\"Property\":\"Valid_humidty\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"atmospheredet\"}},\"Property\":\"Valid_humidty\"}},\"Scope\":[]}},\"Operator\":3}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 251.90,
+          "width": 311.82,
+          "x": 0.00,
+          "y": 69.70,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"411cc54fd50a87d32e06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":941.5810843085742,\"y\":34.239312156675425,\"z\":5000,\"width\":338.7246238356819,\"height\":35.462144733699546,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"atmospheredet.CurrentDateTime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"atmospheredet\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"CurrentDateTime\"},\"Name\":\"atmospheredet.CurrentDateTime\",\"NativeReferenceName\":\"CurrentDateTime\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"CurrentDateTime\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lockAspect\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 35.46,
+          "width": 338.72,
+          "x": 941.58,
+          "y": 34.24,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"6727373c4509c92e07bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":253.1263434439933,\"y\":0,\"z\":6000,\"width\":776.4986864103176,\"height\":52.58180081203726,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"atmospheredet.Heading\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"atmospheredet\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Heading\"},\"Name\":\"atmospheredet.Heading\",\"NativeReferenceName\":\"Heading\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"27D\"}}},\"italic\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":-0.5}}}}},\"underline\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 52.58,
+          "width": 776.50,
+          "x": 253.13,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"8808fc13db6d9be52e45\",\"layouts\":[{\"id\":0,\"position\":{\"x\":891.9412385467094,\"y\":69.9830817936649,\"z\":3000,\"width\":388.3374930903365,\"height\":281.3045444647314,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"countrydetfinal.Country\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"countrydetfinal\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Country\"},\"Name\":\"countrydetfinal.Country\",\"NativeReferenceName\":\"Country\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"pendingChangesIcon\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.4}}}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"showTooltipButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showSmartNarrativeButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 281.30,
+          "width": 388.34,
+          "x": 891.94,
+          "y": 69.98,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"affb466931090a550bad\",\"layouts\":[{\"id\":0,\"position\":{\"x\":327.7191306424648,\"y\":69.70145689037497,\"z\":1000,\"width\":311.8223071411512,\"height\":269.0231669453069,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"dg5AAA90EFEFE747CB9357C4FC19B85A58\",\"projections\":{\"chartName\":[{\"queryRef\":\"atmospheredet.Speed Label\"}],\"min\":[{\"queryRef\":\"atmospheredet.Red Start\"}],\"max\":[{\"queryRef\":\"atmospheredet.Red End\"}],\"yellowStart\":[{\"queryRef\":\"atmospheredet.Orange Begin\"}],\"yellowEnd\":[{\"queryRef\":\"atmospheredet.Orange End\"}],\"redStart\":[{\"queryRef\":\"atmospheredet.Green Begin\"}],\"redEnd\":[{\"queryRef\":\"atmospheredet.Green End\"}],\"pointerValue\":[{\"queryRef\":\"atmospheredet.SpeedValue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"atmospheredet\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Speed Label\"},\"Name\":\"atmospheredet.Speed Label\",\"NativeReferenceName\":\"Speed Label\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Red Start\"},\"Name\":\"atmospheredet.Red Start\",\"NativeReferenceName\":\"Red Start\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Red End\"},\"Name\":\"atmospheredet.Red End\",\"NativeReferenceName\":\"Red End\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Orange Begin\"},\"Name\":\"atmospheredet.Orange Begin\",\"NativeReferenceName\":\"Orange Begin\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Orange End\"},\"Name\":\"atmospheredet.Orange End\",\"NativeReferenceName\":\"Orange End\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Green Begin\"},\"Name\":\"atmospheredet.Green Begin\",\"NativeReferenceName\":\"Green Begin\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Green End\"},\"Name\":\"atmospheredet.Green End\",\"NativeReferenceName\":\"Green End\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"SpeedValue\"},\"Name\":\"atmospheredet.SpeedValue\",\"NativeReferenceName\":\"SpeedValue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Red Start\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"colorSelector\":[{\"properties\":{\"minmax\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#E12525'\"}}}}},\"target\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#47D115'\"}}}}}}}],\"reverse\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"threeD\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"generalLegend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Wind Speed '\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 269.02,
+          "width": 311.82,
+          "x": 327.72,
+          "y": 69.70,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"cc2cfcee8a8500c73525\",\"layouts\":[{\"id\":0,\"position\":{\"x\":599.1879627418199,\"y\":69.70145689037497,\"z\":0,\"width\":276.36016240745164,\"height\":269.0231669453069,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"PBI_CV_309E6B47_39A5_4681_808F_132AFB230872\",\"projections\":{\"Temperature\":[{\"queryRef\":\"atmospheredet.Final_Temperature\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"atmospheredet\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Final_Temperature\"},\"Name\":\"atmospheredet.Final_Temperature\",\"NativeReferenceName\":\"Final_Temperature\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Final_Temperature\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"config\":[{\"properties\":{\"postfix\":{\"expr\":{\"Literal\":{\"Value\":\"'°C'\"}}}}}],\"legend\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Range of Temperatures'\"}}},\"range1\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"range2\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"range3\":{\"expr\":{\"Literal\":{\"Value\":\"35D\"}}},\"range4\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Temperature'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 269.02,
+          "width": 276.36,
+          "x": 599.19,
+          "y": 69.70,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f122cdf31c02bb34ed9c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":338.93767064774954,\"z\":4000,\"width\":1280.278731637046,\"height\":381.47640663997726,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"countrydetfinal.Country\",\"active\":true},{\"queryRef\":\"countrydetfinal.City\"}],\"Y\":[{\"queryRef\":\"Avg(countrydetfinal.Latitude)\"}],\"X\":[{\"queryRef\":\"Avg(countrydetfinal.Longitude)\"}],\"Series\":[{\"queryRef\":\"weatherdet.weather_descriptions\"}],\"Tooltips\":[{\"queryRef\":\"atmospheredet.Valid_Date\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"countrydetfinal\",\"Type\":0},{\"Name\":\"w\",\"Entity\":\"weatherdet\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"atmospheredet\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Country\"},\"Name\":\"countrydetfinal.Country\",\"NativeReferenceName\":\"Country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Latitude\"}},\"Function\":0},\"Name\":\"Avg(countrydetfinal.Latitude)\",\"NativeReferenceName\":\"Latitude\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Longitude\"}},\"Function\":0},\"Name\":\"Avg(countrydetfinal.Longitude)\",\"NativeReferenceName\":\"Longitude\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"City\"},\"Name\":\"countrydetfinal.City\",\"NativeReferenceName\":\"City\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"weather_descriptions\"},\"Name\":\"weatherdet.weather_descriptions\",\"NativeReferenceName\":\"Weather\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Valid_Date\"},\"Name\":\"atmospheredet.Valid_Date\",\"NativeReferenceName\":\"Weather Reported On\"}]},\"columnProperties\":{\"weatherdet.weather_descriptions\":{\"displayName\":\"Weather\"},\"atmospheredet.Valid_Date\":{\"displayName\":\"Weather Reported On\"},\"Avg(countrydetfinal.Longitude)\":{\"displayName\":\"Longitude\"},\"Avg(countrydetfinal.Latitude)\":{\"displayName\":\"Latitude\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'aerial'\"}}}}}],\"mapControls\":[{\"properties\":{\"showZoomButtons\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"legend\":[{\"properties\":{\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"bubbles\":[{\"properties\":{\"bubbleSize\":{\"expr\":{\"Literal\":{\"Value\":\"25L\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Latitude, Longitude and Weather Report On by Country and Weather'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualTooltip\":[{\"properties\":{\"themedBackground\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"actionFontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.2}}}}},\"themedValueFontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 381.48,
+          "width": 1280.28,
+          "x": 0.00,
+          "y": 338.94,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
