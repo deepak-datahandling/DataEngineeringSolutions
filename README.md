@@ -8,7 +8,7 @@ This project demonstrates an end-to-end implementation of live weather report an
 3. [Step-by-Step Implementation](#step-by-step-implementation)
 4. [Real-Time Workflow](#real-time-workflow)
 6. [Visuals](#visuals)
-7. [Alternative Batch Processing](#additional-batch-processing)
+7. [Alternative Batch Processing](#alternative-batch-processing)
 ## Project Overview
 This project involves collecting weather data from various regions, processing it using Spark, and visualizing the results in Power BI. The data pipeline leverages Azure Data Factory (ADF), Synapse Notebooks, OneLake, and Power BI for seamless data integration and visualization.
 
@@ -92,12 +92,15 @@ This project involves collecting weather data from various regions, processing i
 
 ### Final Dashboard
 - Final View:
+  
  ![Final Report](https://github.com/user-attachments/assets/ed8643c6-9073-4d85-bf9c-649fb0a4f63c)
 
 - Normal View:
+
   ![Final Report 1](https://github.com/user-attachments/assets/1cf9f17f-e5ad-4426-9f8f-d95d01c7f8d0)
 
 - Drill Down View:
+  
   ![Final Report 2](https://github.com/user-attachments/assets/d6e8a8bb-b2a4-436b-9884-addf641c4e35)
 
 ## Alternative Batch Processing
