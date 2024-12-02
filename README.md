@@ -36,3 +36,4 @@ The workflow consists of three tasks:
 - **notebooks/**: Contains the notebooks for data validation and the trigger notebook.
   - `Delta_Table_Validation.ipynb`: Notebook for validating the tables 
   - `Cluster_Trigger.ipynb`: Notebook to check and trigger the Prod cluster.
+  - `.py`: python extension of same notebooks.
