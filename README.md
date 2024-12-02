@@ -20,6 +20,7 @@ This project involves collecting weather data from various regions, processing i
   - Semantic Model (for data modeling and relationships)
   - Power BI (for data visualization using DAX queries)
 - **Technical Stack**:
+  - SQL
   - PySpark
   - Spark-Structured Streaming
   - DAX Queries (beginner level)
@@ -64,16 +65,12 @@ This project involves collecting weather data from various regions, processing i
 
 ### Data Modeling Relationship
 
-![ADF Pipeline](https://github.com/user-attachments/assets/107c4702-4400-4105-9f52-a89d27d3bce9)
+![Data Modeling](https://github.com/user-attachments/assets/377450c6-331e-4ea0-9a03-06eda6496ecf)
 
 ### 5. Power BI Report
 - **Description**: Create a Power BI report to visualize weather data.
 - **Steps**: Use the semantic model to build and publish a weather report.
 - **Power BI**: Implement DAX queries for calculations and visualizations.
-
-### Data Lineage
-
-![Data Lineage](https://github.com/user-attachments/assets/1f1b3985-8fca-40d4-81b0-99efa6560ebd)
 
 ## Real-Time Workflow
 
@@ -86,6 +83,10 @@ This project involves collecting weather data from various regions, processing i
 
 
 ## Visuals
+
+### Data Lineage
+
+![Data Lineage](https://github.com/user-attachments/assets/1f1b3985-8fca-40d4-81b0-99efa6560ebd)
 
 ### Published Report
 - You can view the published Power BI weather report [here](https://app.fabric.microsoft.com/view?r=eyJrIjoiNWFkZGUwMjMtNWQyNy00NjE4LWFjNTMtOGFhNTM2ODc3ZDZkIiwidCI6IjI5OTZmNDI3LTkyOTctNDY1ZS04YmYwLWYyMTIyYzAzMWQxYyIsImMiOjl9).
