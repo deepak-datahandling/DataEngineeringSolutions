@@ -1,18 +1,18 @@
 -- Databricks notebook source
-USE DATABASE dsr;
+USE DATABASE med;
 
 -- COMMAND ----------
 
-CREATE TABLE IF NOT EXISTS dsr.Proc_Details(
+CREATE TABLE IF NOT EXISTS med.Proc_Details(
   PID long,
   Name string,
   Proc_Date date,
   Status string
-) USING DELTA LOCATION "/mnt/dsrblob/dsr-tables/Proc_Details/"
+) USING DELTA LOCATION "/mnt/medblob/med-tables/Proc_Details/"
 
 -- COMMAND ----------
 
-CREATE TABLE IF NOT EXISTS dsr.Proc_Addr_Details(
+CREATE TABLE IF NOT EXISTS med.Proc_Addr_Details(
   PID long NOT NULL,
   Hospital string,
   street string,
@@ -20,11 +20,11 @@ CREATE TABLE IF NOT EXISTS dsr.Proc_Addr_Details(
   state string,
   country string,
   postalCode long
-) USING DELTA LOCATION "/mnt/dsrblob/dsr-tables/Proc_Addr_Details/"
+) USING DELTA LOCATION "/mnt/medblob/med-tables/Proc_Addr_Details/"
 
 -- COMMAND ----------
 
-CREATE TABLE IF NOT EXISTS dsr.Proc_Addr_Details_managed(
+CREATE TABLE IF NOT EXISTS med.Proc_Addr_Details_managed(
   PID long NOT NULL,
   Hospital string,
   Street string,
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS dsr.Proc_Addr_Details_managed(
   Country string,
   PostalCode long
 );
-CREATE TABLE IF NOT EXISTS dsr.Proc_Details_managed(
+CREATE TABLE IF NOT EXISTS med.Proc_Details_managed(
   PID long,
   Name string,
   Proc_Date date,
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS dsr.Proc_Details_managed(
 
 -- COMMAND ----------
 
-CREATE TABLE IF NOT EXISTS dsr.Proc_Details_managed(
+CREATE TABLE IF NOT EXISTS med.Proc_Details_managed(
   PID long,
   Name string,
   Proc_Date date,
