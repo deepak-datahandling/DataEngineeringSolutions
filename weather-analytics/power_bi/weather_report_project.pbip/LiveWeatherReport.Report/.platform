@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "LiveWeatherReport"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "885e75b3-75a2-4218-8a6c-aee04c29eea2"
+  }
+}
